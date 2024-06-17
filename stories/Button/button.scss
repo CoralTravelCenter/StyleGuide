@@ -1,0 +1,54 @@
+@import '../global.css';
+
+.coral-button {
+  border: none;
+  cursor: pointer;
+  padding: var(--padding_SM) var(--padding_Base);
+  border-radius: var(--border_Radius_Button);
+  font-family: "Manrope", sans-serif;
+  line-height: 1;
+  font-size: var(--font_Size_Body);
+  font-style: normal;
+  font-weight: 500;
+  transition-property: background-color, color, border;
+  transition-duration: 300ms;
+}
+
+.coral-button--primary {
+  background-color: var(--сolor_Btn_Bg_Default);
+  color: var(--color_Btn_Text_Light);
+
+  &:hover {
+    background-color: var(--сolor_Btn_Bg_Hover);
+  }
+
+  &:active {
+    background-color: var(--сolor_Btn_Bg_Pressed);
+  }
+
+  &:disabled {
+    background: var(--сolor_Btn_Bg_Disabled);
+    color: var(--color_Btn_Text_Disabled);
+  }
+}
+
+.coral-button--secondary {
+  border: 1px solid var(--color_Btn_Border_Ghost_Default);
+  color: var(--color-Btn_Text_Dark);
+  background: transparent;
+
+  &:hover {
+    border: 1px solid var(--color_Btn_Border_Ghost_Hover);
+    color: var(--color_Btn_Text_Ghost_Hover);
+  }
+
+  &:active {
+    color: var(--color_Btn_Text_Ghost_Pressed);
+    border: 1px solid var(--color_Btn_Border_Ghost_Pressed);
+  }
+
+  &:disabled {
+    border: 1px solid var(--color_Btn_Border_Disabled);
+    color: var(--color_Btn_Text_Disabled);
+  }
+}
