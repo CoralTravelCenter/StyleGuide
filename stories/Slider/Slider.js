@@ -1,6 +1,6 @@
 import {html} from 'lit';
-import './slider.scss';
 import {Button} from '../Button/Button';
+import './slider.scss';
 
 
 export const Slider = ({title}) => {
@@ -123,14 +123,11 @@ export const Slider = ({title}) => {
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script>
 			const swiper = new Swiper('.swiper', {
-				// Optional parameters
 				spaceBetween: 24,
-				// If we need pagination
 				pagination: {
 					el: '.swiper-pagination',
 				},
 
-				// Navigation arrows
 				navigation: {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
